@@ -1,0 +1,6 @@
+com\atlassian\codingchallenge\model\Link.class
+com\atlassian\codingchallenge\model\ParsedResponse.class
+com\atlassian\codingchallenge\MessagePraseResource.class
+com\atlassian\codingchallenge\ApplicationConfig.class
+com\atlassian\codingchallenge\util\MessageParser.class
+com\atlassian\codingchallenge\util\LinkUtils.class
