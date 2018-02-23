@@ -4,14 +4,13 @@ This is a RESTFul service that has PUT operation which takes an input string as 
 
 TODO
 ------------------
-
 Development of this  service is still in progress. Below tasks are still pending.
-1. Implement logic to retrieve title.
-2. Handle exceptions and return HTTP error codes accordingly.
-3. Authenticate / validate input request
-4. Complete Unit Tests for Links.
-5. Add logging.
 
+  1. Implement logic to retrieve title.
+  2. Handle exceptions and return HTTP error codes accordingly.
+  3. Authenticate / validate input request
+  4. Complete Unit Tests for Links.
+  5. Add logging.
 
 Technology
 -------------------
