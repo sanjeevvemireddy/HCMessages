@@ -2,16 +2,6 @@
 
 This is a RESTFul service that has PUT operation which takes an input string as plain text and returns a json string whcih identifies user name mentions, Emoticons and Links in the input string. 
 
-TODO
-------------------
-Development of this  service is still in progress. Below tasks are still pending.
-
-  1. Implement logic to retrieve title.
-  2. Handle exceptions and return HTTP error codes accordingly.
-  3. Authenticate / validate input request
-  4. Complete Unit Tests for Links.
-  5. Add logging.
-
 Technology
 -------------------
 * JEE7
@@ -98,3 +88,12 @@ Output
         }
       ]
     }
+
+TODO
+------------------
+Development of this  service is still in progress. Below tasks are still pending.
+
+  1. Handle exceptions and return HTTP error codes accordingly.
+  3. Authenticate / validate input request
+  4. Complete Unit Tests for Links.
+  5. Add logging.
