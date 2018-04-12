@@ -5,8 +5,10 @@
  */
 package com.atlassian.codingchallenge;
 
+import com.atlassian.codingchallenge.model.RequestModel;
 import com.atlassian.codingchallenge.util.MessageParser;
 import com.google.gson.Gson;
+import java.util.List;
 import javax.ws.rs.Produces;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.Path;
@@ -34,14 +36,19 @@ public class MessageParseResource {
      * @return return a json string
      */
     @PUT
-    @Consumes(MediaType.TEXT_PLAIN)
+    @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public String  putXml(String content) {
        
+        Gson objGson = new Gson();
+        
+        RequestModel request = objGson.fromJson(content, RequestModel.class);
+        
+        List<String> texts = request.getTexts();
+        
         // validate request
         MessageParser parser = new MessageParser();
         
-        Gson objGson = new Gson();
         return objGson.toJson(parser.parse(content));
         
     }

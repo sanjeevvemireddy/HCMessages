@@ -57,7 +57,7 @@ public class MessageParser {
         LinkUtils utils = new LinkUtils();
         
         for(String link :links){
-            String title = utils.getTitle(link); //TODO implement the getTitle Method in LinkUtils class
+            String title = utils.getTitle(link);
             response.addLink(new Link(link,title));
         }
         
