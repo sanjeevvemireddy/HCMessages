@@ -18,10 +18,8 @@ Requirements:
 
 Parsing of input is done as for the following :
 
-1. mentions - A way to mention a user. Always starts with an '@' and ends when hitting a non-word character. (https://confluence.atlassian.com/hipchat/get-teammates-attention-744328217.html)
-
-2. Emoticons - For this exercise, you only need to consider 'custom' emoticons which are alphanumeric strings, no longer than 15 characters, contained in parenthesis. You can assume that anything matching this format is an emoticon. (https://www.hipchat.com/emoticons)
-
+1. mentions - A way to mention a user. Always starts with an '@' and ends when hitting a non-word character. 
+2. Emoticons - For this exercise, you only need to consider 'custom' emoticons which are alphanumeric strings.
 3. Links - Any URLs contained in the message, along with the page's title.
 
 Build
@@ -42,37 +40,9 @@ Sample url : http://localhost:8084/HCMessages/webresources/parse
 
 Output
 ---------
+Input: "@bob @john (success) such a cool feature; https://twitter.com/jdorfman/status/430511497475670016"
 
-    Input: "@chris you around?"
-    Return:
-    {
-      "mentions": [
-        "chris"
-      ]
-    }
-
-    Input: "Good morning! (megusta) (coffee)"
-    Return:
-    {
-      "emoticons": [
-        "megusta",
-        "coffee"
-      ]
-    }
-
-    Input: "Olympics are starting soon; http://www.nbcolympics.com"
-    Return:
-    {
-      "links": [
-        {
-          "url": "http://www.nbcolympics.com",
-          "title": "2016 Rio Olympic Games | NBC Olympics"
-        }
-      ]
-    }
-
-    Input: "@bob @john (success) such a cool feature; https://twitter.com/jdorfman/status/430511497475670016"
-    Return:
+Return:
     {
       "mentions": [
         "bob",
